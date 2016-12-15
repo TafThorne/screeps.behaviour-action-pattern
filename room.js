@@ -409,6 +409,24 @@ var mod = {
                     return this._hostileIds;
                 }
             },
+           'enemies': {
+                configurable: true,
+                get: function() {
+                    if( _.isUndefined(this._enemies) ){ 
+                        this._enemies = this.find(FIND_CREEPS, { filter : c => _.indexOf(PLAYER_WHITELIST, c.owner.username) == -1 });
+                    }
+                    return this._enemies;
+                }
+            },
+            'enemyIds': {
+                configurable: true,
+                get: function() {
+                    if( _.isUndefined(this._enemyIds) ){ 
+                        this._enemyIds = _.map(this.enemies, 'id');
+                    }
+                    return this._enemyIds;
+                }
+            },
             'combatCreeps': {
                 configurable: true,
                 get: function() {
