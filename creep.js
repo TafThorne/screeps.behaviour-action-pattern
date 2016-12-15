@@ -36,6 +36,7 @@ var mod = {
             mineralMiner: require('./creep.behaviour.mineralMiner'),
             pioneer: require('./creep.behaviour.pioneer'),
             privateer: require('./creep.behaviour.privateer'),
+            prospector: require('./creep.behaviour.prospector'),
             ranger: require('./creep.behaviour.ranger'),
             upgrader: require('./creep.behaviour.upgrader'),
             worker: require('./creep.behaviour.worker')
@@ -49,6 +50,7 @@ var mod = {
             mineralMiner: require('./creep.setup.mineralMiner'),
             pioneer: require('./creep.setup.pioneer'),
             privateer: require('./creep.setup.privateer'),
+            prospector: require('./creep.setup.prospector'),
             ranger: require('./creep.setup.ranger'),
             upgrader: require('./creep.setup.upgrader'),
             worker: require('./creep.setup.worker')

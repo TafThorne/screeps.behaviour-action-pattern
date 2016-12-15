@@ -11,6 +11,7 @@ var mod = {
                 Creep.setup.healer,
                 Creep.setup.pioneer, 
                 Creep.setup.privateer,
+                Creep.setup.prospector,
                 Creep.setup.claimer];
         Spawn.prototype.loop = function(){
             if( this.spawning ) return;
